@@ -1,0 +1,123 @@
+/* open-sans-regular - latin */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/open-sans-v34-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/open-sans-v34-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* open-sans-500 - latin */
+  @font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 500;
+    src: local(''),
+         url('../fonts/open-sans-v34-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/open-sans-v34-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* open-sans-700 - latin */
+  @font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+         url('../fonts/open-sans-v34-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/open-sans-v34-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* open-sans-800 - latin */
+  @font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 800;
+    src: local(''),
+         url('../fonts/open-sans-v34-latin-800.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/open-sans-v34-latin-800.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+/* GalanoGrotesque-Bold */
+
+  @font-face {
+    font-family: 'GalanoGrotesque-Bold';
+    src: local(''), 
+        url('../fonts/GalanoGrotesque-Bold.ttf') format('woff2'),
+        url('../fonts/GalanoGrotesque-Bold.woff') format('woff'),
+        url('../fonts/GalanoGrotesque-Bold.woff2') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }
+
+body {
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.wrapper {
+    width: 1229px;
+    margin: 0 auto;
+}
+
+.page, 
+.elem, 
+.text {
+    display: flex;
+    flex-direction: column;
+}
+.cards_main {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.elem {
+    width: 343px;
+}
+
+.elem * {
+    margin-top: 0;
+}
+
+.icon {
+    margin-bottom: 32px;
+}
+
+h2 {
+    margin-bottom: 28px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 23px;
+    text-transform: uppercase;
+}
+
+p {
+    margin-bottom: 52px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 26px;
+}
+
+.more {
+    padding-top: 28px;
+    border-top: 1px solid #B3B3B3;
+    font-family: 'GalanoGrotesque-Bold';
+    font-size: 16px;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: #4343FF;
+}
+
+.cards_clone {
+    display: flex;
+    justify-content: center;    
+}
+
+.cards_clone .elem:first-child {
+    margin-right: 100px;
+}
