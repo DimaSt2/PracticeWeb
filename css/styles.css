@@ -47,6 +47,25 @@
     font-style: normal;
     }
 
+/* montserrat-regular - latin */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/montserrat-v25-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v25-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* montserrat-500 - latin */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    src: local(''),
+         url('../fonts/montserrat-v25-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v25-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
 body {
     margin: 0px;
 }
@@ -58,6 +77,8 @@ body {
     width: 1229px;
     margin: 0 auto;
 }
+
+/* first page start*/
 
 .page,
 .elem,
@@ -76,7 +97,7 @@ body {
 }
 
 .elem * {
-    margin-top: 0;
+    margin-top: 0; /*все отступы блоков будут назначатся margin-bottom*/
 }
 
 .icon {
@@ -115,8 +136,81 @@ p {
 .cards_clone {
     display: flex;
     justify-content: center;
+    margin-bottom: 50px; /*не было задано, установлено чтобы не примыкали страницы*/
 }
 
 .cards_clone .elem:first-child {
     margin-right: 100px;
 }
+
+/*first page end*/
+
+/*second page start*/
+
+.page2 {
+    display: flex;            /* общий контейнер для 2 блоков страницы*/
+    flex-direction: column;
+    width: 1116px;
+    margin: 0 auto;
+}
+
+.module_main {                /*верхний блок*/
+    display: flex;
+    justify-content: space-between;   /*контент по краям*/
+    width: 974px;
+    margin-bottom: 72px;      /*отступ до нижнего блока*/
+}
+
+.page2_text {
+    display: flex;
+    flex-direction: column;
+    width: 334px;
+    margin-top: 40px;
+}
+
+.page2_text * {         
+    margin-top: 0;      /*обнуляем верхний отступ для всех вложеннных элементов*/ 
+}
+
+.page2_text h3,
+.page2_text p {
+    margin-bottom: 15px;
+}
+
+
+h3 {                            /*общие стили всех заголовков*/
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;    /*в фигме значение 500, но больше похоже на 600*/
+    font-size: 20px;
+    color: #333333;
+}
+
+
+p {                         /*общие стили всех абзацев*/
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.page2_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 192px;
+    height: 56px;
+    border: 1px solid #0079C8;
+    border-radius: 4px;
+}
+
+.discover {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    color: #0079C8;
+    text-decoration: none;
+}
+
