@@ -1,0 +1,248 @@
+/* open-sans-regular - latin */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+    url('../fonts/open-sans-v34-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/open-sans-v34-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    }
+    /* open-sans-500 - latin */
+    @font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 500;
+    src: local(''),
+    url('../fonts/open-sans-v34-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/open-sans-v34-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    }
+    /* open-sans-700 - latin */
+    @font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+    url('../fonts/open-sans-v34-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/open-sans-v34-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    }
+    /* open-sans-800 - latin */
+    @font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 800;
+    src: local(''),
+    url('../fonts/open-sans-v34-latin-800.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/open-sans-v34-latin-800.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    }
+    
+    /* GalanoGrotesque-Bold */
+    
+    @font-face {
+    font-family: 'GalanoGrotesque-Bold';
+    src: local(''),
+    url('../fonts/GalanoGrotesque-Bold.ttf') format('woff2'),
+    url('../fonts/GalanoGrotesque-Bold.woff') format('woff'),
+    url('../fonts/GalanoGrotesque-Bold.woff2') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    }
+
+/* montserrat-regular - latin */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/montserrat-v25-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v25-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* montserrat-500 - latin */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    src: local(''),
+         url('../fonts/montserrat-v25-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v25-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+body {
+    margin: 0px;
+}
+
+* {
+    box-sizing: border-box;
+}
+.wrapper {
+    max-width: 1229px;  /*добавлен max-width для адаптива*/
+    margin: 0 auto;
+}
+
+/* first page start*/
+
+.page,
+.elem,
+.text {
+    display: flex;
+    flex-direction: column;
+}
+.cards_main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.elem {
+    width: 343px;
+}
+
+.elem * {
+    margin-top: 0; /*все отступы блоков будут назначатся margin-bottom*/
+}
+
+.icon {
+    margin-bottom: 32px;
+}
+
+h2 {
+    margin-bottom: 28px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 23px;
+    text-transform: uppercase;
+}
+
+p {
+    margin-bottom: 52px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 26px;
+}
+
+.more {
+    padding-top: 28px;
+    border-top: 1px solid #B3B3B3;
+    font-family: 'GalanoGrotesque-Bold';
+    font-size: 16px;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: #4343FF;
+}
+
+.cards_clone {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 50px; /*не было задано, установлено чтобы не примыкали страницы*/
+}
+
+.cards_clone .elem:first-child {
+    margin-right: 100px;
+}
+
+/*first page end*/
+
+/*second page start*/
+
+.page2 {
+    display: flex;            /* общий контейнер для 2 блоков страницы*/
+    flex-direction: column;
+    max-width: 1116px;
+    margin: 0 auto;
+}
+
+.module_main {                /*верхний блок*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;   /*контент по краям*/
+    max-width: 974px;
+    margin-bottom: 72px;      /*отступ до нижнего блока*/
+}
+
+.page2_text {
+    display: flex;
+    flex-direction: column;
+    width: 334px;
+    margin-top: 40px;
+}
+
+.page2_text * {         
+    margin-top: 0;      /*обнуляем верхний отступ для всех вложеннных элементов*/ 
+}
+
+.page2_text h3,
+.page2_text p {
+    margin-bottom: 15px;
+}
+
+h3 {                            /*общие стили всех заголовков*/
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;    /*в фигме значение 500, но больше похоже на 600*/
+    font-size: 20px;
+    color: #333333;
+}
+
+.page2 p {                         /*общие стили всех абзацев*/
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.page2_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 192px;
+    height: 56px;
+    border: 1px solid #0079C8;
+    border-radius: 4px;
+}
+
+.discover {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    color: #0079C8;
+    text-decoration: none;
+}
+
+@media  (max-width: 1224px) {    /*центрирование элементов для адаптива*/
+    .cards_main,
+    .module_main {
+        justify-content: center;
+    }
+
+    .cards_main .elem:first-child,     /*уменьшение отступов между элементами*/
+    .cards_clone .elem:first-child {
+        margin-right: 20px;
+    }
+    
+    .module_main {       /*отступ между блоком и картинкой при перемещении ее во вторую строку*/  
+        gap: 20px;
+    }
+
+    .page2_text {                /*немного стилей для более красивого расположения*/
+        align-items: center;
+    }
+
+    .page2_text p {
+        text-align: center;
+    }
+}
+
+@media (max-width: 583px) {    /*отступы картинке при большом уменьшении экрана*/
+    .main_img {
+        max-width:100%;
+        padding: 15px;
+    }
+}
+
