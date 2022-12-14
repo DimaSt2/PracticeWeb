@@ -74,7 +74,7 @@ body {
     box-sizing: border-box;
 }
 .wrapper {
-    width: 1229px;
+    max-width: 1229px;  /*добавлен max-width для адаптива*/
     margin: 0 auto;
 }
 
@@ -88,6 +88,7 @@ body {
 }
 .cards_main {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 100px;
 }
@@ -135,6 +136,7 @@ p {
 
 .cards_clone {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 50px; /*не было задано, установлено чтобы не примыкали страницы*/
 }
@@ -150,14 +152,15 @@ p {
 .page2 {
     display: flex;            /* общий контейнер для 2 блоков страницы*/
     flex-direction: column;
-    width: 1116px;
+    max-width: 1116px;
     margin: 0 auto;
 }
 
 .module_main {                /*верхний блок*/
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;   /*контент по краям*/
-    width: 974px;
+    max-width: 974px;
     margin-bottom: 72px;      /*отступ до нижнего блока*/
 }
 
@@ -177,7 +180,6 @@ p {
     margin-bottom: 15px;
 }
 
-
 h3 {                            /*общие стили всех заголовков*/
     font-family: 'Montserrat';
     font-style: normal;
@@ -186,8 +188,7 @@ h3 {                            /*общие стили всех заголов�
     color: #333333;
 }
 
-
-p {                         /*общие стили всех абзацев*/
+.page2 p {                         /*общие стили всех абзацев*/
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
@@ -212,5 +213,36 @@ p {                         /*общие стили всех абзацев*/
     font-size: 16px;
     color: #0079C8;
     text-decoration: none;
+}
+
+@media  (max-width: 1224px) {    /*центрирование элементов для адаптива*/
+    .cards_main,
+    .module_main {
+        justify-content: center;
+    }
+
+    .cards_main .elem:first-child,     /*уменьшение отступов между элементами*/
+    .cards_clone .elem:first-child {
+        margin-right: 20px;
+    }
+    
+    .module_main {       /*отступ между блоком и картинкой при перемещении ее во вторую строку*/  
+        gap: 20px;
+    }
+
+    .page2_text {                /*немного стилей для более красивого расположения*/
+        align-items: center;
+    }
+
+    .page2_text p {
+        text-align: center;
+    }
+}
+
+@media (max-width: 583px) {    /*отступы картинке при большом уменьшении экрана*/
+    .main_img {
+        max-width:100%;
+        padding: 15px;
+    }
 }
 
